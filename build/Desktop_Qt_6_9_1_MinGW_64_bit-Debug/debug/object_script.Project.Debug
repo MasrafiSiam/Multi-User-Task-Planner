@@ -1,0 +1,15 @@
+debug/addtaskui.o
+debug/main.o
+debug/mainwindow.o
+debug/signupform.o
+debug/task.o
+debug/tasklist.o
+debug/taskplanner.o
+debug/taskwidget.o
+debug/user.o
+debug/userdashboard.o
+debug/moc_addtaskui.o
+debug/moc_mainwindow.o
+debug/moc_signupform.o
+debug/moc_taskwidget.o
+debug/moc_userdashboard.o

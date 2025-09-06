@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #d16ba5,   /* pinkish purple */
+        stop:1 #2575fc    /* vivid blue */
+    );
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="txtusername">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>250</y>
+      <width>631</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 18pt &quot;Segoe UI&quot;;
+
+    border: none;                /* remove native border */
+    border-radius: 20px;         /* makes edges round */
+    padding: 5px 15px;   
+color: rgb(0, 0, 0);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BSignup">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>610</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font: 14pt &quot;Segoe UI&quot;;
+
+    background-color: #9b59b6;  /* signup button purple */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+QPushButton:hover {
+    background-color: #8e44ad;  /* darker purple on hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Sign Up</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Blogin">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>450</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 14pt &quot;Segoe UI&quot;;
+
+    background-color: #3498db;  /* button color */
+    color: white;                /* text color */
+    border: none;                /* remove native border */
+    border-radius: 20px;         /* makes edges round */
+    padding: 5px 15px;           /* spacing inside button */
+}
+QPushButton:hover {
+    background-color: #2980b9;  /* hover color */
+}
+
+QPushButton:pressed {
+    background-color: #1c5980;  /* pressed color */
+}</string>
+    </property>
+    <property name="text">
+     <string>Sign in</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BtnUsers">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>730</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font: 14pt &quot;Segoe UI&quot;;
+
+    background-color: #95a5a6;  /* neutral gray */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+QPushButton:hover {
+    background-color: #7f8c8d;  /* darker gray hover */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Show all users</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>200</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;
+font: 18pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Username </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>320</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;
+font: 18pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>610</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;
+font: 12pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Don't have an account ?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>10</y>
+      <width>421</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;
+font: 36pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Task Manager</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtpassword">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>370</y>
+      <width>641</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 18pt &quot;Segoe UI&quot;;
+
+    border: none;                /* remove native border */
+    border-radius: 20px;         /* makes edges round */
+    padding: 5px 15px;   
+color: rgb(0, 0, 0);</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

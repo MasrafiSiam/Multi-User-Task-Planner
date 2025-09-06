@@ -1,0 +1,15 @@
+release/addtaskui.o
+release/main.o
+release/mainwindow.o
+release/signupform.o
+release/task.o
+release/tasklist.o
+release/taskplanner.o
+release/taskwidget.o
+release/user.o
+release/userdashboard.o
+release/moc_addtaskui.o
+release/moc_mainwindow.o
+release/moc_signupform.o
+release/moc_taskwidget.o
+release/moc_userdashboard.o

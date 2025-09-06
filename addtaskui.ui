@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addtaskui</class>
+ <widget class="QDialog" name="addtaskui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #d16ba5,   /* pinkish purple */
+        stop:1 #2575fc    /* vivid blue */
+    );
+}
+</string>
+  </property>
+  <widget class="QPlainTextEdit" name="txtTitle">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>80</y>
+     <width>661</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 18pt &quot;Segoe UI&quot;;
+
+    border: none;                /* remove native border */
+    border-radius: 20px;         /* makes edges round */
+    padding: 5px 15px;   
+color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="txtdis">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>210</y>
+     <width>661</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 18pt &quot;Segoe UI&quot;;
+
+    border: none;                /* remove native border */
+    border-radius: 20px;         /* makes edges round */
+    padding: 5px 15px;   
+color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="txtdue">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>390</y>
+     <width>661</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 18pt &quot;Segoe UI&quot;;
+
+    border: none;                /* remove native border */
+    border-radius: 20px;         /* makes edges round */
+    padding: 5px 15px;   
+color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="txtPriority">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>530</y>
+     <width>661</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 18pt &quot;Segoe UI&quot;;
+
+    border: none;                /* remove native border */
+    border-radius: 20px;         /* makes edges round */
+    padding: 5px 15px;   
+color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAdd">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>640</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font: 14pt &quot;Segoe UI&quot;;
+
+    background-color: #27ae60;  /* green button color */
+    color: white;               /* text color */
+    border: none;               /* remove native border */
+    border-radius: 20px;        /* rounded edges */
+    padding: 5px 15px;          /* spacing inside button */
+}
+
+QPushButton:hover {
+    background-color: #219150;  /* darker green on hover */
+}
+
+QPushButton:pressed {
+    background-color: #1b7a42;  /* even darker green when pressed */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btncancel">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>640</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font: 14pt &quot;Segoe UI&quot;;
+
+    background-color: #e74c3c;  /* red button color */
+    color: white;               /* text color */
+    border: none;               /* remove native border */
+    border-radius: 20px;        /* makes edges round */
+    padding: 5px 15px;          /* spacing inside button */
+}
+
+QPushButton:hover {
+    background-color: #c0392b;  /* darker red on hover */
+}
+
+QPushButton:pressed {
+    background-color: #96281b;  /* even darker red when pressed */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>30</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+font: 18pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>TITLE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>160</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+font: 18pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>DESCRIPTION</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>340</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+font: 18pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>DUE DATE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>480</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+font: 18pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>PRIORITY</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
